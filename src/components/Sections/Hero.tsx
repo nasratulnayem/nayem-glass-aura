@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Download, Eye, ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-bg.jpg';
+import profilePhoto from '@/assets/profile-photo.jpg';
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -38,6 +39,18 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Content */}
           <div className="glass-intense rounded-2xl p-8 md:p-12 hover-lift">
+            {/* Profile Photo */}
+            <div className="mb-8 animate-fade-in">
+              <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40">
+                <img
+                  src={profilePhoto}
+                  alt="Nasratul Nayem Profile Photo"
+                  className="w-full h-full object-cover rounded-full border-4 border-border-glass shadow-glow"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent to-background/20" />
+              </div>
+            </div>
+            
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6 animate-fade-in">
               Nasratul Nayem
             </h1>
