@@ -1,42 +1,112 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Portfolio specific styles */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background: hsl(var(--surface));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
 }
 
-.card {
-  padding: 2em;
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--border-hover));
 }
 
-.read-the-docs {
-  color: #888;
+/* Text selection */
+::selection {
+  background-color: hsl(var(--text-primary) / 0.2);
+  color: hsl(var(--text-primary));
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid hsl(var(--border-hover));
+  outline-offset: 2px;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Prose styles for blog content */
+.prose {
+  max-width: none;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  color: hsl(var(--text-primary));
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  color: hsl(var(--text-primary));
+}
+
+.prose p {
+  margin: 1rem 0;
+  line-height: 1.7;
+  color: hsl(var(--text-muted));
+}
+
+.prose ul, .prose ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin: 0.5rem 0;
+  color: hsl(var(--text-muted));
+}
+
+.prose pre {
+  background: hsl(var(--surface-glass));
+  border: 1px solid hsl(var(--border-glass));
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.prose code {
+  background: hsl(var(--surface-hover));
+  border: 1px solid hsl(var(--border));
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  color: hsl(var(--text-primary));
+}
+
+.prose blockquote {
+  border-left: 4px solid hsl(var(--border-hover));
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: hsl(var(--text-secondary));
 }
