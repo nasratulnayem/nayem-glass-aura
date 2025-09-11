@@ -63,7 +63,7 @@ const Hero = () => {
               <p>
                 My name is Nasratul Nayem — I love creating websites and solving problems 
                 related to custom WordPress functions and custom design. With 4+ years of 
-                experience and 10+ websites delivered worldwide, I create fast, secure, 
+                experience and 180+ websites delivered worldwide, I create fast, secure, 
                 and custom WordPress solutions.
               </p>
             </div>
