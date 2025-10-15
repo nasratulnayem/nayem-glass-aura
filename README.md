@@ -4,7 +4,7 @@ A modern, ultra-minimal portfolio website built with React, TypeScript, and Tail
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [https://nasratulnayem.dev](https://nasratulnayem.dev)
+Visit the live portfolio: [https://nasratulnayem.dev](https://nayem.dev)
 
 ## ✨ Features
 
